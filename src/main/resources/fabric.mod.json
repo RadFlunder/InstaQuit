@@ -7,8 +7,9 @@
   "authors": ["Radflunder"],
   "contact": {
     "homepage": "https://modrinth.com/project/instaquit",
-    "sources": "https://github.com/YourGitHub/InstaQuit",
-    "issues": "https://github.com/YourGitHub/InstaQuit/issues"
+    "sources": "https://github.com/RadFlunder/InstaQuit",
+    "issues": "https://github.com/RadFlunder/InstaQuit/issues",
+    "discord": "https://discord.com/users/1070325738248601641"
   },
   "license": "All-Rights-Reserved",
   "icon": "assets/instaquit/icon.png",
