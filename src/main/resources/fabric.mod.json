@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "instaquit",
+  "version": "${version}",
+  "name": "InstaQuit",
+  "description": "Allows you to instantly quit the world with a single keypress – perfect for PvP situations!",
+  "authors": ["Radflunder"],
+  "contact": {
+    "homepage": "https://modrinth.com/project/instaquit",
+    "sources": "https://github.com/YourGitHub/InstaQuit",
+    "issues": "https://github.com/YourGitHub/InstaQuit/issues"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/instaquit/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "gg.radflunder.instaquit.client.InstaquitClient"
+    ],
+    "main": [
+      "gg.radflunder.instaquit.Instaquit"
+    ]
+  },
+  "mixins": [
+    "instaquit.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
