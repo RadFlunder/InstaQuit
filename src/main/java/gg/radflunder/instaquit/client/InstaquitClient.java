@@ -11,10 +11,12 @@ import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.realms.gui.screen.RealmsMainScreen;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.client.world.ClientWorld;
+import net.minecraft.util.Identifier;
 import org.lwjgl.glfw.GLFW;
 
 public class InstaquitClient implements ClientModInitializer {
     private static KeyBinding quitKey;
+    private static final KeyBinding.Category CATEGORY = KeyBinding.Category.create(Identifier.of("instaquit", "keys"));
 
     @Override
     public void onInitializeClient() {
@@ -22,7 +24,7 @@ public class InstaquitClient implements ClientModInitializer {
                 "key.instaquit.quit",
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_I,
-                "category.instaquit.keys"
+                CATEGORY
         ));
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> checkKeyPress());
